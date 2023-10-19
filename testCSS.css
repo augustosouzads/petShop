@@ -1,0 +1,45 @@
+.wrap{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wrap ul li{
+    position: absolute;
+}
+.wrap img {
+    border: 5px solid #FFF;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 hsla(0, 0%, 30%, .3);
+}
+.wrap ul li:nth-child(4) {
+    animation:xfade 8s 0s infinite;
+}
+.wrap ul li:nth-child(3) {
+    animation:xfade 8s 2s infinite;
+}
+.wrap ul li:nth-child(2) {
+    animation:xfade 8s 4s infinite;
+}
+.wrap ul li:nth-child(1) {
+    animation:xfade 8s 6s infinite;
+}
+@keyframes xfade{
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+}

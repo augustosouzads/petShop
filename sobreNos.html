@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel='stylesheet' href='stylePET.css'>
+    <title>Sobre Nos</title>
+    <link rel="shortcut icon" href="images/iconeFootPrint.png">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a href="index.html" target="_blank"><img src="images/logotipoDarkAlignTop.png" alt="logotipo da Pets Strong" title="inicio"></a>
+            <form action="" class="form">
+                <img src="images/iconeBusca.png" alt="lupa de pesquisa">
+                <input type="text" id="txt-pesquisa" class="input-pesquisa" placeholder="Pesquise na PetSStrong">
+                <input type="submit" value="buscar" class="btn-pesquisa">
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="produtos.html" target="_blank">Produtos</a></li>
+                    <li><a href="servicos.html" target="_blank">Serviços</a></li>
+                    <li><a href="adocao.html" target="_blank">Adoção</a></li>
+                    <li><a href="sobreNos.html" target="_blank">Sobre Nós</a></li>
+                    <li><a href="faleConosco.html" target="_blank">Fale Conosco</a></li>
+                    <li><a href="index.html" target="_blank"><img id="icone-voltar" src="images/iconeFootPrint.png" alt="inicio" title="Voltar ao inicio"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="formulario">
+
+            <h1 class="alinhaCent espaco nossaEmpresa" style="font-size:3em">Sobre Nos</h1>
+
+            <div class="alinhaCent imgem">
+                <img class="tamnhoImg" src="images/pets-3715733.jpg" />
+            </div>
+
+            <div class="alinhaCent espaco borda ">
+                <lebel class="nossaEmpresa">
+                    <p>
+                        Nos somos uma empresa totalmente a apaixonada por pet
+                        e estamos trazendo o melhor para você e seu amigão.
+                    </p><p>
+                        Estamos no mercado Pet desde 2015, oferecendo todos
+                        os serviços e produtos para te auxiliar nos cuidados
+                        do seu animal, proporcionando Saúde e Bem Estar ao seu Você e seu Pet.
+                    </p><p>
+                        Para bem atendê-lo em tudo o que você precisa em
+                        um único lugar, nossa lojas esta situada em um lugar
+                        estratégico e de fácil acesso, com muito conforto
+                        e segurança.
+                    </p><p>
+                        Nossos Colaboradores são profissionais
+                        treinados e especializados para melhor servi-lo.
+                    </p><p>
+                        O Pet Strong é um ambiente especial para toda a Família.
+                    </p><p>
+                        O Pet Strong não poderia deixar de evoluir.
+                    </p><p>
+                        Por essa razão, alternativamente a loja física,
+                        oferece agora, a loja virtual, facilitando no seu dia a dia.
+                    </p><p>
+                        Além de preços competitivos, qualidade e variedade e animais
+                        para doação, os produtos adquiridos na Pet Strong
+                        levam para sua casa e para o seu animal todo o nosso carinho
+                        e gratidão pela oportunidade de tê-lo como nosso cliente.
+                    </p>
+                </lebel>
+            </div>
+
+
+
+            <button class="accordion nossaEmpresa">Quais as formas de pagamento que a Geração Pet oferece?</button>
+            <div class="panel">
+                <p class="nossaEmpresa espacoPer">
+                    Comprar aqui com a gente é muito fácil! Você pode pagar sua compra usando:
+                </p>
+                <p class="nossaEmpresa espacoPer">
+                    → Cartão de crédito Visa, Mastercard, e você tambem pode parcelado em até 3 parcelas, sem juros.
+                </p>
+                <p class="nossaEmpresa espacoPer">
+                    → Com a Modernidade Agora Você pode pagar sua Compra no Pix .
+                </p>
+            </div>
+
+            <button class="accordion nossaEmpresa">O que Preciza Para Adotar um Pet?</button>
+            <div class="panel">
+                <p class="nossaEmpresa espacoPer">
+                    → O adotante precisa ser maior de 21 anos, apresentar RG, CPF, comprovante de residência recente.
+                    Assinar um termo se comprometendo a cuidar do animalzinho, que agora passa a ser de responsabilidade dele.
+                </p>
+            </div>
+
+            <button class="accordion nossaEmpresa">Quais são as formas de reembolso?</button>
+            <div class="panel">
+                <p class="nossaEmpresa espacoPer">
+                    Caso o produto atenda as exigências para devolução, a restituição do valor será realizada de acordo com
+                    a forma que foi realizada o pagamento
+                </p>
+                <p class="nossaEmpresa espacoPer">
+                    → se o pagamento foi por Cartão de crédito Visa, Mastercard, Nos estaremos fazendo o estorno
+                </p>
+                <p class="nossaEmpresa espacoPer">
+                    → se o pagamento foi por Pix, Nos estaremos devouvendo atraves do Pix
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logoRodape">
+            <img src="images/logoAuxLight.png" alt="logotipo auxiliar escuro da Pets Strong">
+            <p class="copyright"> Copyright&copy; 2021 - Pets Strong Comércio e clinica Pet S/A <br> Majinhos'Dev </p>
+        </div>
+    </footer>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+
+                this.classList.toggle("active");
+
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

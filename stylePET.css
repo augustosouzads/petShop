@@ -1,0 +1,771 @@
+/* CSS DO CABEÇALHO */
+
+header {
+    background: #CCC77C;
+    padding: 0 20px;
+    font-family: 'Galindo', cursive;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+
+/*----------------------------*/
+
+.t1 {
+    font-family: 'Fascinate', cursive;
+}
+
+.t2 {
+    font-family: 'Mr De Haviland', cursive;
+}
+
+.t3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.t4 {
+    font-family: 'Galindo', cursive;
+}
+
+.t5 {
+    font-family: 'Girassol', cursive;
+}
+
+.t6 {
+    font-family: 'Pirata One', cursive;
+}
+
+
+/* CSS DO INDEX */
+
+.cabecalho {
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho img {
+    margin-left: 4em;
+    padding-bottom: 1px;
+    display: inline-block;
+}
+
+.form {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #ffffee;
+    border: 2px solid rgb(47, 15, 1);
+    border-radius: 10px;
+    width: 300px;
+    height: 32px;
+    margin: 0;
+}
+
+.form img {
+    float: left;
+    width: 25px;
+    margin-left: 7px;
+    padding-top: 4px;
+}
+
+#txt-pesquisa {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1em;
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+
+.btn-pesquisa {
+    color: #CCC77C;
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 0 7px 7px 0;
+    width: 70px;
+    font-weight: bold;
+    background: #4A0F01;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+nav Li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #4A0F01;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    /*retirando o efeito sublinhado padrao dos link*/
+    transition: 250ms;
+}
+
+#icone-voltar {
+    width: 25px;
+    margin-left: 1px;
+    transition: 250ms;
+}
+
+#icone-voltar:hover {
+    color: #FF6200;
+    width: 28px;
+    padding: 2px;
+    border: 2px solid #4A0F01;
+    border-radius: 1em;
+    box-shadow: 2px 2px rgb(255, 98, 0);
+}
+
+nav a:hover {
+    color: #FF6200;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #4a1001cc;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.titulo-principal {
+    font-family: 'Galindo', cursive;
+    text-align: center;
+    margin: 0.5em 0 1em;
+    font-size: 2em;
+    color: #4A0F01;
+}
+
+main:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(images/footprints.png);
+    background-size: 15%;
+}
+
+.main-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.main-conteudo:hover {
+    box-shadow: inset 0 0 30px rgba(255, 098, 0, 0.9);
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+.banner li {
+    position: absolute;
+}
+
+.banner img {
+    height: 400px;
+    width: 100%;
+}
+
+.banner li:nth-child(8) {
+    animation: xfade 40s 0s infinite;
+}
+
+.banner li:nth-child(7) {
+    animation: xfade 40s 4s infinite;
+}
+
+.banner li:nth-child(6) {
+    animation: xfade 40s 8s infinite;
+}
+
+.banner li:nth-child(5) {
+    animation: xfade 40s 12s infinite;
+}
+
+.banner li:nth-child(4) {
+    animation: xfade 40s 16s infinite;
+}
+
+.banner li:nth-child(3) {
+    animation: xfade 40s 20s infinite;
+}
+
+.banner li:nth-child(2) {
+    animation: xfade 40s 24s infinite;
+}
+
+.banner li:nth-child(1) {
+    animation: xfade 40s 30s infinite;
+}
+
+
+/* CROSS FADE CONFIG */
+
+@keyframes xfade {
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    background-color: #fffbee9a;
+    box-sizing: border-box;
+    /* deixa o valor da largura fixa impedindo de somar o padding e o margin aumentando a largura*/
+    border: 3px solid #4a1001cc;
+    border-radius: 15px;
+    /*arredondar os cantos da borda*/
+}
+
+.produtos li:hover {
+    border-color: #FF6200;
+}
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos h2 {
+    font-family: 'Fascinate', cursive;
+    color: #4a1001;
+    font-size: 2em;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.produtos li:hover h2 {
+    color: #FF6200;
+    text-shadow: 2px 2px #4a1001;
+    transform: 2.5em;
+}
+
+.produtos img {
+    padding: 1em 0;
+}
+
+.produto-descricao {
+    font-family: 'Girassol', cursive;
+    font-size: 22px;
+    color: #4a1001;
+    padding-top: 5px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    color: #4a1001;
+    font-family: 'Pirata One', cursive;
+    padding-top: 10px;
+}
+
+.beneficios {
+    padding: 1em 0;
+}
+
+.conteudo-beneficios {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lista-beneficios {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    font-family: 'Galindo', cursive;
+    color: #4A0F01;
+    text-align: left;
+    font-size: 20px;
+    padding: 0 0 0 0.5em;
+    line-height: 1.5;
+}
+
+.itens:nth-child(2N) {
+    font-weight: bolder;
+}
+
+.itens:hover {
+    padding: 0 0 0 0.5em;
+    font-weight: bolder;
+    font-size: 22px;
+    border: 1px solid #4A0F01;
+    border-radius: 5px;
+    margin-right: 4px;
+    box-shadow: 5px 5px 5px 0px rgb(255, 98, 0);
+}
+
+.itens:before {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 98, 0);
+    content: " ⍟ "
+}
+
+.imagem-beneficios {
+    width: 400px;
+    margin-left: 2em;
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+    /*ao passar o mouse por cima deixar opaco 30% de visualização*/
+    opacity: 1;
+    box-shadow: 10px 10px 10px 0px;
+    border-radius: 2.6em;
+    transform: scale(1.1);
+}
+
+.fieldset-video {
+    border: 4px solid rgb(255, 98, 0);
+    border-radius: 0.5em;
+    width: 70%;
+    margin: 3em auto;
+    background-color: #fffbee9a;
+}
+
+.fieldset-video legend {
+    font-family: 'Galindo', cursive;
+    font-size: 2em;
+    color: #4A0F01;
+    padding: 0 20px;
+}
+
+.fieldset-video p {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    line-height: 1.2em;
+    padding: 20px;
+}
+
+.video {
+    width: 55%;
+    margin: 20px 20px 5px 15px;
+    float: right;
+    opacity: 0.9;
+    border: 1px double #FF6200;
+    border-radius: 10px;
+    box-shadow: 13px 13px 12px 0px #4A0F01;
+}
+
+.fieldset-video strong em {
+    color: #FF6200;
+    font-weight: bolder;
+}
+
+.redes-sociais {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.redes-conteudo p {
+    font-size: 1.5em;
+    display: inline-block;
+    width: fit-content;
+    vertical-align: middle;
+}
+
+.lista-redes {
+    text-align: right;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.redes-conteudo hr {
+    height: 1px;
+    background-color: #4A0F01;
+}
+
+.lista-redes li {
+    display: inline-block;
+}
+
+.lista-redes li img {
+    width: 40px;
+    padding: 0.5em;
+    border-radius: 2em;
+    background-color: #FF6200;
+    box-shadow: 3px 3px 3px 0px #4A0F01;
+    margin: 0 0.5em;
+}
+
+.mapa {
+    clear: right;
+    padding-bottom: 10px;
+}
+
+.mapa-conteudo {
+    width: 100%;
+    text-align: center;
+}
+
+.mapa h3 {
+    color: #4A0F01;
+}
+
+.mapa p {
+    width: fit-content;
+    margin: 0.5em auto;
+    padding: 2px 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #4A0F01;
+    border: 2px dashed #4A0F01;
+    border-radius: 0.7em;
+    background-color: #fffbee9a;
+}
+
+
+/*=========================================================================================
+                        * * * F A L E - C O N O S O C O * * *
+===========================================================================================*/
+
+
+/* CSS DA Fale Conosco */
+
+.formulario {
+    width: 940px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    font-family: 'Galindo', cursive;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+#mensagem {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #FF6200;
+}
+
+fieldset {
+    margin: 20px 0;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 55%;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+.periodo {
+    text-align: center;
+}
+
+fieldset select {
+    text-align: center;
+    width: 90%;
+    border: 2px solid rgb(47, 15, 1);
+    border-radius: 1em;
+    font-family: 'Galindo', cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset option {
+    text-align: center;
+    color: #FF6200;
+    position: center;
+}
+
+.input-padrao {
+    display: block;
+    width: 50%;
+    border: 2px solid rgb(47, 15, 1);
+    border-radius: 1em;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 55%;
+    padding: 15px 0;
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+    background: #FF6200;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #088C19;
+    transform: scale(1.2);
+    /* rotate(360deg); Aumentar o elemento proporcionalmente em 20% e girar 360°*/
+}
+
+.hrDeFuncionamento {
+    width: 940px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.hrDeFuncionamento>p {
+    font-family: 'Galindo', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: #4A0F01;
+    width: 55%;
+    margin: 0 0 10px;
+}
+
+table {
+    margin: 20px 0 40px;
+    /*20pixels para cima 0px para os lados e 40pixes para baixo*/
+    border: 2px solid rgb(47, 15, 1);
+    border-radius: 3em;
+    width: 55%;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffa9945f;
+}
+
+tr:nth-child(even) {
+    background-color: #ff62005f;
+}
+
+thead tr:first-child {
+    background: #2f0f01;
+    color: #CCC77C;
+    font-weight: bold;
+}
+
+td,
+th {
+    font-size: larger;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+tr:hover {
+    background: #CCC77C;
+    color: #4A0F01;
+    font-weight: bold;
+}
+
+
+/*----------------------------*/
+
+
+/* CSS DA ADOÇÃO */
+
+
+/*----------------------------*/
+
+
+/* CSS DA PRODUTOS */
+
+
+/*----------------------------*/
+
+
+/* CSS SOBRE NÓS */
+
+.imgem {
+    width: 900px;
+    margin: 20px 20px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 13px 13px 12px 0px #4A0F01;
+}
+
+.borda {
+    border: 4px solid rgb(255, 98, 0);
+    border-radius: 0.5em;
+    width: 70%;
+    margin: 3em auto;
+    background-color: #fffbee9a;
+}
+
+.nossaEmpresa {
+    font-family: 'Galindo', cursive;
+    font-size: 1.4em;
+    color: #424242ea
+}
+
+.espacoPer {
+    padding: 20px 3px !important;
+}
+
+.espaco {
+    padding: 40px 120px !important;
+}
+
+.espacoTop {
+    padding-top: 50px !important;
+}
+
+.alinhaCent {
+    text-align: center !important;
+}
+
+.tamnhoImg {
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.superior {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+}
+
+.foto {
+    width: 400px;
+    right: 500px;
+}
+
+.corText {
+    margin-left: 20px;
+    text-align: left;
+    color: black !important;
+}
+
+.cor {
+    color: black !important;
+}
+
+.cor-botao {
+    background-color: #4a0f01;
+    border: #4a0f01;
+}
+
+.cor-botao:hover {
+    background-color: #721801;
+    border: #721801;
+}
+
+.accordion {
+    background-color: #4a0f01;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #FF6200;
+    color: #4a0f01;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #fffbee9a;
+    overflow: hidden;
+}
+
+
+/*----------------------------*/
+
+
+/* CSS DO RODAPÉ*/
+
+footer {
+    text-align: center;
+    background-color: rgb(47, 15, 1);
+    padding: 40px 0 0 0;
+}
+
+.logoRodape img {
+    width: 100px;
+    animation: logoRodape 5s ease 0s infinite alternate both;
+}
+
+@keyframes logoRodape {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.copyright {
+    padding: 15px;
+    color: #ffffee;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+/*----------------------------*/
