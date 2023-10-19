@@ -157,7 +157,7 @@ main:before {
     height: 100%;
     z-index: 1;
     opacity: 0.3;
-    background-image: url(images/footprints.png);
+    background-image: url(/images/footprints.png);
     background-size: 15%;
 }
 
